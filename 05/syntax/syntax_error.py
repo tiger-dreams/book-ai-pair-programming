@@ -1,3 +1,10 @@
+import os
+
+# Python 파일이 위치한 디렉토리로 작업 디렉토리 변경
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+# 이후의 코드는 새로운 작업 디렉토리에서 실행됩니다.
+
 class MyClass:
     def __init__(self, name, age):
         self.name = name
